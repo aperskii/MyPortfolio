@@ -25,7 +25,7 @@
             <a href="./Lebenslauf.pdf" class="main-btn">View my resume</a>
             <div class="social-icons">
                 <a href="https://www.facebook.com/aperskii"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/yassine-berqiqch"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://twitter.com/YBerqiqch"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://github.com/aperskii"><i class="fa-brands fa-github"></i></a>
             </div>
@@ -108,7 +108,7 @@
         </div>
     </div>
     </section>
-    <form method="POST" action="form.php" id="contact">
+    <form method="POST" action="#" id="contact">
 <section class="contact-form">
     <div class="background">
         <div class="container">
@@ -176,10 +176,33 @@
     <p class="footer-title"> Copyrights @ 2022 By <span> YASSINE BERQIQCH </span></p>
     <div class="social-icons">
         <a href="https://www.facebook.com/aperskii"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/yassine-berqiqch"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://twitter.com/YBerqiqch"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://github.com/aperskii"><i class="fa-brands fa-github"></i></a>
     </div>
 </footer>
 </body>
 </html>
+
+
+<?php 
+if(isset($_POST['email'])) {
+  echo "<a name='message'></a>";
+    $to = "yassine.berqiqch@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject =  $_POST['subject'];
+    $subject2 = "Thank you for contact me";
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    if(mail($to,$subject,$message,$headers) && mail($from,$subject2,$message2,$headers2)) {
+    echo "<div id=\"submitmessage\"> Mail Sent. Thank you " . $name . ", i will contact you shortly. </div>";
+}
+else {
+    echo "Error";
+  }
+}
+?>
