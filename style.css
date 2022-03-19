@@ -8,30 +8,26 @@
 }
 
 header{
-    background-color: #f0f0f0;
+    background-color: #ffffffd8;
     width: 100%;
     position: fixed;
-    z-index: 9000;
+    z-index: 900;
     display: flex;
     justify-content: space-between;    
     align-items: center;
-    padding: 10px 200px;
+    padding: 2px 150px;
 }
-
-.logo{
-    text-decoration: none;
-    color: #3a6cf4;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-
+header img{
+  float: left;
+  width: 75px;
+  height: 75px;
 }
 
 .navigation a {
     color: #3a6cf4;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding-left: 30px;
 }
 .navigation a:hover{
@@ -42,30 +38,29 @@ section{
     padding: 100px 200px;
 }
 .main{
-    width: 100;
-    min-height: 100vh;
+  min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/background.jpeg) no-repeat;
+    background: url(images/background.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .main h2{
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     font-size: 1.4em;
     font-weight: 500;
 }
 .main h2 span{
     display: inline-block;
-    margin-top: 10px;
-    color:#3a6cf4;
-    font-size: 3em;
+    margin: 10px;
+    color:#1fc5e2d8;
+    font-size: 2.5em;
     font-weight: 600;
 }
 
 .main h3{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -90,8 +85,8 @@ section{
     transform: scale(1.1);
 }
 .social-icons a{
-    color:rgb(65, 95, 230);
-    font-size: 1.7em;
+    color:rgb(255, 255, 255);
+    font-size: 1.6em;
     padding-right: 30px;
 }
 .title {
@@ -136,7 +131,7 @@ section{
   }
 
   .projects {
-      background-color: #c4c4c494;
+      background-color: #ffffffd8;
   }
   .projects .content{
       margin-top: 30px;
@@ -433,7 +428,7 @@ section{
 }
 
 .footer{
-    background-color: #c4c4c494;
+    background-color: #ffffffd8;
     color: #020307;
     padding: 2em;
     display: flex;
@@ -449,8 +444,8 @@ section{
     font-size: 1.2em;
 }
 .footer .social-icons a{
-    font-size: 1.2em;
-    padding: 0 12px 0 0;
+  font-size: 1.2em;
+  padding: 0 12px 0 0;
 }
 
 @media (max-width:1023px){
