@@ -38,7 +38,8 @@ section{
     padding: 100px 200px;
 }
 .main{
-  min-height: 100vh;
+   width: 100%; 
+   min-height: 100vh;
     display: flex;
     align-items: center;
     background: url(images/background.png) no-repeat;
@@ -51,15 +52,15 @@ section{
     color: rgb(255, 255, 255);
     font-size: 1.4em;
     font-weight: 500;
-    position: relative;
-left: -20px;
 }
 .main h2 span{
-    display: inline-block;
-    margin: 10px;
-    color:#1fc5e2d8;
+  display: inline-block;
+  margin: 10px;
+    color: beige;
     font-size: 2.5em;
     font-weight: 600;
+    position: relative;
+    left: -20px;
 }
 
 .main h3{
@@ -449,9 +450,11 @@ left: -20px;
 .footer .social-icons a{
   font-size: 1.2em;
   padding: 0 12px 0 0;
+  color: #3a6cf4;
 }
 
-@media (max-width:1023px){
+@media screen and (max-width:1023px){
+
     header{
         padding: 12px 20px;
     }
@@ -466,11 +469,22 @@ left: -20px;
     section{
         padding: 80px 20px;
     }
-    .main-content h2 {
-        font-size: 1em;
+    body{
+      font-size: 12px;
+  }
+  .main h2 span{
+    color: beige;
+    font-size: 2em;
+    display: inline-block;
     }
-    .main-content h3{
-        font-size: 1.5em;
+  .main h2{
+      font-size: 2em;
+    }
+  .main h3{
+      font-size: 2em;
+    }
+  .main-btn{
+       font-size: 2.5em;  
     }
     .content{
         flex-direction: column;
@@ -492,20 +506,6 @@ left: -20px;
     }
     .more-details{
         font-size: 0.8em;
-    }
-    .main{
-     background: url(./images/background-min.png) no-repeat cover;
-    }
-}
-@media (max-width: 641px){
-    body{
-        font-size: 12px;
-    }
-    .main-content h2{
-        font-size: 0.8em;
-    }
-    .main-content h3{
-        font-size: 1.2em;
     }
 }
 
