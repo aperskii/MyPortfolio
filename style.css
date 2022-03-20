@@ -46,10 +46,13 @@ section{
     background-position: center;
     background-attachment: fixed;
 }
+
 .main h2{
     color: rgb(255, 255, 255);
     font-size: 1.4em;
     font-weight: 500;
+    position: relative;
+left: -20px;
 }
 .main h2 span{
     display: inline-block;
@@ -489,6 +492,9 @@ section{
     }
     .more-details{
         font-size: 0.8em;
+    }
+    .main{
+     background: url(./images/background-min.png) no-repeat cover;
     }
 }
 @media (max-width: 641px){
