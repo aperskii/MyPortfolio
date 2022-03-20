@@ -38,31 +38,38 @@ section{
     padding: 100px 200px;
 }
 .main{
-   width: 100%; 
-   min-height: 100vh;
+  width: 100%; 
+  min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/background.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
+.main img{
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .main h2{
     color: rgb(255, 255, 255);
     font-size: 1.4em;
     font-weight: 500;
+    position: relative;
 }
 .main h2 span{
   display: inline-block;
   margin: 10px;
-    color: #29b0c2e8;
+    color: #00d7ff;
     font-size: 2.5em;
     font-weight: 600;
     position: relative;
     left: -20px;
 }
-
 .main h3{
     color: rgb(255, 255, 255);
     font-size: 2em;
@@ -70,6 +77,7 @@ section{
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
+    position: relative;
 }
 .main-btn{
     color: #f0f0f0;
@@ -83,6 +91,7 @@ section{
     border-radius: 15px;
     margin-bottom: 40px;
     transition: 0.7s ease;
+    position: relative;
 }
 .main-btn:hover{
     background-color: #012a9b;
@@ -92,6 +101,7 @@ section{
     color:rgb(255, 255, 255);
     font-size: 1.6em;
     padding-right: 30px;
+    position: relative;
 }
 .title {
     display: flex;
@@ -404,7 +414,6 @@ section{
       display: none;
     }
   }
-  
   @media screen and (max-width: 600px) {
     .screen-body {
       padding: 40px;
@@ -414,6 +423,7 @@ section{
       padding: 0;
     }
   }
+
   
   .info-me{
     padding: 1em;
@@ -454,17 +464,16 @@ section{
 }
 
 @media screen and (max-width:1023px){
-
     header{
         padding: 12px 20px;
     }
     .navigation a{
         padding-left: 10px;
-        font-size: 1.5em;
+        font-size: 3em;
         font-weight: 700;
     }
     .title{
-        font-size: 2.5em;
+        font-size: 3em;
     }
     section{
         padding: 80px 20px;
@@ -506,6 +515,15 @@ section{
     .more-details{
         font-size: 0.8em;
     }
+    .footer-title{
+      font-size: 2em;
+    }
+    .social-icons a{
+      font-size: 2.5em;
+    }
+   .footer .social-icons a{
+     font-size: 2.5em;
+   }
 }
 
 

@@ -19,7 +19,6 @@ else {
   }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +41,7 @@ else {
     </header>
     <section class="main">
         <div>
+         <img src="/images/background.png" alt="bg"> 
             <h2>Hi There! I am<br><span>Yassine </br> Berqiqch</span></h2>
             <h3>Full Stack Web Developer</h3>
             <a href="./Lebenslauf.pdf" class="main-btn">View my resume</a>
